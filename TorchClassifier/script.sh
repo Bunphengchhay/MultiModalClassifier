@@ -1,0 +1,9 @@
+export http_proxy=http://172.16.1.2:3128; export https_proxy=http://172.16.1.2:3128
+#python myTorchTrainer.py --data_name 'tiny-imagenet-200' --data_type 'trainonly' --data_path "/data/cmpe249-fa23/ImageClassData" --model_name 'vit_b_32' --learningratename 'StepLR' --lr 0.1 --momentum 0.9 --wd 1e-4 --optimizer 'SGD' --batchsize 32
+#python myTorchTrainer.py --data_name 'tiny-imagenet-200' --data_type 'trainonly' --data_path "/data/cmpe249-fa23/ImageClassData" --model_name 'inception_v3' --learningratename 'StepLR' --lr 0.1 --momentum 0.9 --wd 1e-4 --optimizer 'SGD' --batchsize 32
+#python myTorchTrainer.py --data_name 'tiny-imagenet-200' --data_type 'trainonly' --data_path "/data/cmpe249-fa23/ImageClassData" --model_name 'resnetmodel1' --learningratename 'StepLR' --lr 0.1 --momentum 0.9 --wd 1e-4 --optimizer 'SGD'
+#python myTorchEvaluator.py --data_name 'imagenet_blurred' --data_type 'trainonly' --data_path "/data/cmpe249-fa23/ImageClassData" --model_name 'resnet50' --model_type 'ImageNet' --classmap 'TorchClassifier/Datasetutil/imagenet1000id2label.json'e
+
+# evaluate
+python myTorchEvaluator.py --data_name 'tiny-imagenet-200' --data_type 'trainonly' --data_path "/data/cmpe249-fa23/ImageClassData" --model_name 'vit_b_32' --checkpoint 'outputs/tiny-imagenet-200_vit_b_32_0910/checkpoint.pth.tar' --classmap 'TorchClassifier/Datasetutil/tinyimagenet_idmap.json' --gpuid 0
+#python myTorchEvaluator.py --data_name 'tiny-imagenet-200' --data_type 'trainonly' --data_path "/data/cmpe249-fa23/ImageClassData" --model_name 'resnet50' --checkpoint 'outputs/tiny-imagenet-200_resnetmodel1_0910/checkpoint.pth.tar' --classmap 'TorchClassifier/Datasetutil/tinyimagenet_idmap.json' --gpuid 0
