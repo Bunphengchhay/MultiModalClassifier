@@ -1,5 +1,5 @@
 # MultiModalClassifier
-This is my home workproject. The main repository can be found here https://github.com/lkk688/DeepDataMiningLearning.
+This is my homework project CMPE 258, SJSU. The main repository can be found here https://github.com/lkk688/DeepDataMiningLearning.
 
 This is a project repo for multi-modal deep learning classifier with popular models from Tensorflow and Pytorch. The goal of these baseline models is to provide a template to build on and can be a starting point for any new ideas, applications. If you want to learn basics of ML and DL, please refer this repo: https://github.com/lkk688/DeepDataMiningLearning.
 
